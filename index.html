@@ -9,9 +9,12 @@
   </head>
   <body>
     <h1 id="titre">Shifumi</h1>
-    <button onclick="jouer('Pierre')">Pierre</button>
-    <button onclick="jouer('Feuille')">Feuille</button>
-    <button onclick="jouer('Ciseaux')">Ciseaux</button>
+    
+    <div id="jeu">
+      <button onclick="jouer('Pierre')">Pierre</button>
+      <button onclick="jouer('Feuille')">Feuille</button>
+      <button onclick="jouer('Ciseaux')">Ciseaux</button>
+    </div>
 
     <div id="resultat">
       <p id="choix-ordi"></p>
@@ -20,7 +23,7 @@
         <span id="label-egalites">Égalité</span> : <span id="compte-egalites">0</span> |
         <span id="label-defaites">Défaite</span> : <span id="compte-defaites">0</span>
       </p>
-      <button onclick="reset()">Reset</button>
+      <button onclick="reset()">Réinitialiser le score</button>
     </div>
   </body>
 </html>
